@@ -1,15 +1,15 @@
 import React from 'react'
-import HeaderNavBar from '../components/HeaderNavBar'
-import ParticlesBackground from '../components/ParticlesBackground'
-import HomeText from '../components/HomeText'
+import HomeAnimation from '../components/HomeAnimation'
+import HomeAbout from '../components/HomeAbout'
+import Footer from '../components/Footer'
 
 const HomePage = () => {
   return (
-    <div>
-        {/* <HeaderNavBar/> */}
-        <ParticlesBackground/>
-        <HomeText/>
-    </div>
+   <div>
+    <HomeAnimation/>
+    <HomeAbout/>
+    <Footer/>
+   </div>
   )
 }
 
