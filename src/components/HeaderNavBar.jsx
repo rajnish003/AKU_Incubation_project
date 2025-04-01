@@ -220,7 +220,7 @@ const HeaderNavBar = () => {
           </button> */}
           <button 
           onClick={memberHandler}
-          className="border border-green-500 text-red-500 px-4 py-2 rounded-md hover:bg-green-300 transition font-semibold">
+          className="border border-orange-500 text-orange-500 px-4 py-2 rounded-md hover:bg-orange-300 hover:text-white transition font-semibold">
             Apply
           </button>
     </div>
