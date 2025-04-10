@@ -72,7 +72,6 @@ const HeaderNavBar = () => {
         position: "relative",  // Prevents particles from appearing inside
         zIndex: 100, // Ensures it's always on top
         background: "#fff",
-        // padding: "5px",
       }}
     >
       <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between py-4">
