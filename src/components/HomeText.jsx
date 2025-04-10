@@ -1,7 +1,11 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const HomeText = () => {
-
+  const navigate = useNavigate();
+  const clickHandler=()=>{
+    navigate("*")
+    
+  }
 
   return (
     <div className="  flex flex-col items-center justify-center min-h-[70vh] text-center px-4">
@@ -21,8 +25,9 @@ const HomeText = () => {
       </h1>
 
       <button 
-      
-      className="px-4 sm:px-6 py-2 sm:py-3 text-white font-semibold rounded-full bg-gradient-to-r from-blue-500 to-teal-400 hover:scale-105 transition-all duration-300 shadow-lg text-sm sm:text-base md:text-lg">
+      className="px-4 sm:px-6 py-2 sm:py-3 text-white font-semibold rounded-full bg-gradient-to-r from-blue-500 to-teal-400 hover:scale-105 transition-all duration-300 shadow-lg text-sm sm:text-base md:text-lg"
+      onClick={clickHandler}
+      >
         Apply For Incubation
       </button>
     </div>

@@ -5,7 +5,7 @@ import FluidCursor from './FluidCursor'
 const HomeAnimation = () => {
   return (
     <div>
-        <div>
+        <div className='shadow-lg'>
         {/* <HeaderNavBar/> */}
         <ParticlesBackground/>
         <HomeText/>
