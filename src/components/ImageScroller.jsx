@@ -6,15 +6,36 @@ const ImageScroller = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const images = [
-    'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000',
-    'https://images.unsplash.com/photo-1493244040629-496f6d136cc3?w=1000',
-    'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1000',
-    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000',
-    'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1000',
-    'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1000',
+    '/imageScroller/Picture1.png',
+    '/imageScroller/Picture2.jpg',
+    '/imageScroller/Picture3.jpg',
+    '/imageScroller/Picture4.png',
+    '/imageScroller/Picture5.jpg',
+    '/imageScroller/Picture6.jpg',
+    '/imageScroller/Picture7.jpg',
+    '/imageScroller/Picture8.jpg',
+    '/imageScroller/Picture9.png',
+    '/imageScroller/Picture10.png',
+    '/imageScroller/Picture11.jpg',
+    '/imageScroller/Picture12.jpg',
+    '/imageScroller/Picture13.jpg',
+    '/imageScroller/Picture14.jpg',
+    '/imageScroller/Picture15.png',
+    '/imageScroller/Picture16.jpg',
+    '/imageScroller/Picture17.jpg',
+    '/imageScroller/Picture18.jpg',
+    '/imageScroller/Picture19.jpg',
+    '/imageScroller/Picture20.jpg',
+    '/imageScroller/Picture21.jpg',
+    '/imageScroller/Picture22.jpg',
+    '/imageScroller/Picture23.png',
+    '/imageScroller/Picture24.jpg',
+    '/imageScroller/Picture25.png',
+    '/imageScroller/Picture26.jpg',
+    '/imageScroller/Picture27.jpg',
   ];
 
-  const allImages = [...images, ...images];
+  const allImages = [...images,];
 
   const renderModal = () => {
     if (!selectedImage) return null;
@@ -47,7 +68,7 @@ const ImageScroller = () => {
           .scroller {
             display: flex;
             gap: 1.5rem;
-            animation: scrollLeft 30s linear infinite;
+            animation: scrollLeft 60s linear infinite;
             width: max-content;
           }
 
@@ -59,7 +80,7 @@ const ImageScroller = () => {
       </style>
 
       <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-2">Media Gallery</h2>
+        <h2 className="text-3xl md:text-4xl font-extrabold text-orange-500 mb-2">Media Gallery</h2>
         
       </div>
 

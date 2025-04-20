@@ -2,7 +2,90 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const datas = [
+// ✅ Combined array with content
+const contentData = [
+  {
+    name: "Who We Are",
+    description:
+      "The Aryabhatta Knowledge University Incubation Centre is a dynamic hub designed to nurture groundbreaking ideas, support ambitious entrepreneurs, and foster innovation. We provide startups, visionaries, and early-stage businesses with the resources, mentorship, and infrastructure they need to thrive in today's competitive ecosystem.",
+    description2: "",
+    image:
+      "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Why Choose Us?",
+    sections: [
+      {
+        heading: "Comprehensive Support:",
+        points: [
+          "From idea validation to market entry, we guide you at every stage of your journey.",
+        ],
+      },
+      {
+        heading: "Mentorship: ",
+        points: [
+          "Work with industry leaders, seasoned entrepreneurs, and domain experts to refine your vision.",
+        ],
+      },
+      {
+        heading: "State-of-the-Art Facilities: ",
+        points: [
+          "Co working spaces, Computer labs, Media Lab and meeting rooms",
+        ],
+      },
+      {
+        heading: "Funding Opportunities: ",
+        points: [
+          "Connect with angel investors, venture capitalists, and funding networks to accelerate your growth.",
+        ],
+      },
+      {
+        heading: "Networking & Collaboration:  ",
+        points: [
+          "Be part of a thriving community of innovators, startups, and partners.",
+        ],
+      },
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "What We Offer",
+    sections: [
+      {
+        heading: "1.	Startup Incubation:",
+        points: [
+          "Tailored programs for startups, including training, strategy development, and business model validation.",
+        ],
+      },
+      {
+        heading: "Mentorship Programs: ",
+        points: [
+          "Expert guidance to overcome challenges and scale your business.",
+        ],
+      },
+      {
+        heading: "Workspaces:  ",
+        points: [
+          "Affordable, modern, and fully equipped workspaces to support your team's productivity.",
+        ],
+      },
+      {
+        heading: "Workshops & Events: ",
+        points: [
+          "Regularly organized boot camps, seminars, and networking events to expand your knowledge and connections.",
+        ],
+      },
+      {
+        heading: "Funding Assistance:   ",
+        points: [
+          "Support in crafting pitch decks and connecting with potential investors.",
+        ],
+      },
+    ],
+    image:
+      "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
   {
     name: "Establishment of Incubation Centre at the Aryabhatta Knowledge University",
     description:
@@ -12,9 +95,6 @@ const datas = [
     image:
       "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-];
-
-const data2 = [
   {
     name: "Objectives of the Incubation Centre",
     points: [
@@ -42,63 +122,73 @@ const HomeAbout = () => {
   }, []);
 
   return (
-    <div className="w-full bg-gray-200"
-    
-    style={{
-      position: "relative",  // Prevents particles from appearing inside
-      zIndex: 100, // Ensures it's always on top e3e1e1
-      background: "#fff",
-    }}
-
-
+    <div
+      className="w-full"
+      style={{
+        position: "relative",
+        zIndex: 100,
+        background: "#fff",
+      }}
     >
-      {datas.map((data, index) => (
+      {contentData.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col md:flex-row  mx-auto bg-white shadow-lg rounded-lg overflow-hidden px-6 md:px-16 py-10 gap-8 justify-around "
-        > 
-          {/* left Side: Image */}
-           <div className="w-full md:w-1/3" data-aos="fade-right">
+          className={`flex flex-col md:flex-row ${
+            index % 2 !== 0 ? "md:flex-row-reverse" : ""
+          } mx-auto shadow-lg rounded-lg overflow-hidden px-6 md:px-16 py-10 gap-8 justify-around ${
+            index % 2 === 0 ? "bg-white" : "bg-[#f2f0f0]"
+          }`}
+        >
+          {/* Image Section */}
+          <div className="w-full md:w-1/3" data-aos="fade-right">
             <img
-              src={data.image}
-              alt="Incubation Centre"
+              src={item.image}
+              alt={item.name}
               className="w-full h-auto object-cover rounded-lg shadow-md"
             />
           </div>
 
-          {/* Left Side: Text Content */}
-          <div className="w-full md:w-2/4 p-6 " data-aos="fade-right">
-            <h2 className="text-3xl font-bold text-orange-500 mb-4">{data.name}</h2>
-            <p className="text-gray-700 leading-10 mt-8">{data.description}</p>
-            <p className="text-gray-700  leading-10 mt-6">{data.description2}</p>
-          </div>
-        </div>
-      ))}
+          {/* Content Section */}
+          <div className="w-full md:w-2/4 p-6 gap-2" data-aos="fade-left">
+            <h2 className="text-3xl md:text-4xl font-bold text-orange-500 mb-6 bg-gray-200 p-4 rounded-lg">
+              {item.name}
+            </h2>
 
-      {/* Second Section: Incubation Centre Objectives */}
-      {data2.map((item, index) => (
-        <div key={index} className="w-full mx-auto">
-          <div className="flex flex-col md:flex-row-reverse items-center gap-8 bg-[#f2f0f0] shadow-lg rounded-lg overflow-hidden p-6 md:p-10 justify-around">
-            {/* Right Side: Image */}
-            <div className="w-full md:w-1/3" data-aos="fade-left">
-              <img
-                src={item.image}
-                alt="Objective"
-                className="w-full h-auto object-cover rounded-lg shadow-md"
-              />
-            </div>
+            {item.description && (
+              <p className="text-gray-700 leading-8 mt-4">{item.description}</p>
+            )}
+            {item.description2 && (
+              <p className="text-gray-700 leading-8 mt-4">{item.description2}</p>
+            )}
 
-            {/* Left Side: Objectives */}
-            <div className="w-full md:w-2/3 " data-aos="fade-right">
-              <h2 className="text-4xl font-bold text-orange-500 mb-10 text-center md:text-left">{item.name}</h2>
-              <ul className="list-disc list-inside space-y-4 text-gray-700 text-lg">
+            {/* Sections with headings */}
+            {item.sections && (
+              <div className="space-y-6 mt-6">
+                {item.sections.map((section, idx) => (
+                  <div key={idx}>
+                    <h3 className="text-xl font-semibold text-orange-600 mb-2">
+                      {section.heading}
+                    </h3>
+                    <ul className="list-disc list-inside space-y-2 text-gray-700 text-base">
+                      {section.points.map((point, i) => (
+                        <li key={i}>{point}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Flat points list fallback */}
+            {item.points && (
+              <ul className="list-disc list-inside space-y-3 text-gray-700 text-lg mt-6">
                 {item.points.map((point, idx) => (
                   <li key={idx} className="leading-7">
                     {point}
                   </li>
                 ))}
               </ul>
-            </div>
+            )}
           </div>
         </div>
       ))}

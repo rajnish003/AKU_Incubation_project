@@ -50,21 +50,20 @@ const HeaderNavBar = () => {
     ],
    },
     { name: "Facilites", link: "/facilites" },
-    { name: "Contacts", link: "/contacts" },
+    { name: "Contacts", link: "/contactUS" },
   ];
    
   // navigate the Login Button
   const navigate = useNavigate();
 
-  //  for login 
-  //  const loginHandler = ()=>{
-  //       navigate("/login");
-  //  }
-   // for Become a member
-   const memberHandler=()=>{
-    navigate("/becomeaMemeber");
+   const ApplyHandler=()=>{
+    navigate("/applynow");
    }
 
+   const clickHandler=()=>{
+    navigate("/");
+   }
+   
 
   return (
     <nav className="bg-white shadow-md"
@@ -76,11 +75,16 @@ const HeaderNavBar = () => {
     >
       <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between py-4">
         {/* Logo */}
+        <button  
+        onClick={clickHandler}
+        >
         <img
-            src="https://via.placeholder.com/50"
+            src="/logos/AKU_LOGO.png"
             alt="Logo"
-            className="h-12 w-12 mb-2 md:mb-0 md:mr-3 rounded-full"
+            className="h-10 w-10 mb-2 md:mb-0 md:mr-3"
           />
+        </button>
+       
         {/* Hamburger Menu (Mobile) */}
         <button
           onClick={() => setOpen(!open)}
@@ -101,7 +105,7 @@ const HeaderNavBar = () => {
            {menu.dropdown ? (
              <>
                {/* Dropdown Button */}
-               <button className="flex items-center justify-between w-full text-gray-800 hover:text-blue-500 transition">
+               <button className="flex items-center justify-between w-full text-gray-800 hover:text-[#ffbf75] transition">
                  {menu.name}
                     {openDropdown === index ? (
                      <SlArrowUp className="ml-2" />
@@ -122,8 +126,8 @@ const HeaderNavBar = () => {
                        to={item.link}
                        className={({ isActive }) =>
                          `${
-                           isActive ? "text-blue-500 font-semibold" : "text-gray-700"
-                         } block mx-1 mb-1 px-3 py-2 rounded-full hover:bg-blue-200 transition-colors duration-200`
+                           isActive ? "text-[#ffbf75] font-semibold" : "text-gray-700"
+                         } block mx-1 mb-1 px-3 py-2 rounded-full hover:bg-[#fcebd4] transition-colors duration-200`
                        }
                      >
                        {item.name}
@@ -136,7 +140,7 @@ const HeaderNavBar = () => {
              <NavLink
                to={menu.link}
                className={({ isActive }) =>
-                 `${isActive ? "text-blue-500 font-semibold" : "text-gray-800"} hover:text-blue-500 transition`
+                 `${isActive ? "text-[#ffbf75] font-semibold" : "text-gray-800"} hover:text-[#ffbf75] transition`
                }
              >
                {menu.name}
@@ -154,7 +158,7 @@ const HeaderNavBar = () => {
             Login
           </button> */}
           <button 
-          onClick={memberHandler}
+          onClick={ApplyHandler}
           className="border border-orange-500 text-orange-500 px-4 py-2 rounded-md hover:bg-orange-300 hover:text-white transition font-semibold">
             Apply
           </button>
@@ -218,7 +222,7 @@ const HeaderNavBar = () => {
             Login
           </button> */}
           <button 
-          onClick={memberHandler}
+          onClick={ApplyHandler }
           className="border border-orange-500 text-orange-500 px-4 py-2 rounded-md hover:bg-orange-300 hover:text-white transition font-semibold">
             Apply
           </button>
