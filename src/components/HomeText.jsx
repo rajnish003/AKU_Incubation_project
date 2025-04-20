@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const HomeText = () => {
   const navigate = useNavigate();
   const clickHandler=()=>{
-    navigate("*")
+    navigate("/applynow")
     
   }
 

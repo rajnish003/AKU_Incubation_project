@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import HeaderNavBar from '../components/HeaderNavBar'
 import Latest_post from '../components/Latest_post'
 import ImageScroller from '../components/ImageScroller'
+import Partnerships from '../components/Partnerships'
 const HomePage = () => {
   return (
    <div>
@@ -13,7 +14,7 @@ const HomePage = () => {
     <Latest_post/>
     <HomeAbout/>
     <ImageScroller/>
-    
+    <Partnerships/>
    </div>
   )
 }
