@@ -47,3 +47,18 @@
   height: 100vh;
   z-index: 0;
 }
+
+/* this is home text css */
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+

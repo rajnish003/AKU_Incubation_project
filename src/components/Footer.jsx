@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center md:text-left">
           {/* About Section */}
           <div>
-            <h2 className="text-xl font-bold mb-2">Visition</h2>
+            <h2 className="text-xl font-bold mb-2">Vision</h2>
             <p className="text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea at fugiat eaque impedit corrupti non praesentium nulla obcaecati similique iste?
             </p>
