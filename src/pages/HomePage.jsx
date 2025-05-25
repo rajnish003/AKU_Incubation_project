@@ -8,6 +8,7 @@ import ImageScroller from '../components/ImageScroller'
 import Partnerships from '../components/Partnerships'
 import HomeCard from '../components/HomeCard'
 import {contentData} from '../Data/Card_data'
+import ImageMarquee from '../components/ImageMarquee'
 const HomePage = () => {
   return (
    <div>
@@ -19,7 +20,8 @@ const HomePage = () => {
     </div>
      */}
     <HomeAbout/>
-    <ImageScroller/>
+    {/* <ImageScroller/> */}
+    <ImageMarquee/>
     <Partnerships/>
     
    </div>

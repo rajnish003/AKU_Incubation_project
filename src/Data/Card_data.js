@@ -1,11 +1,11 @@
 export const contentData = [
   {
-    name: "Who We Are",
+    name: "",
     description:
       "The Aryabhatta Knowledge University Incubation Centre is a dynamic hub designed to nurture groundbreaking ideas, support ambitious entrepreneurs, and foster innovation. We provide startups, visionaries, and early-stage businesses with the resources, mentorship, and infrastructure they need to thrive in today's competitive ecosystem.",
     description2: "",
     image:
-      "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/images/akuincubation.png",
   },
   {
     name: "Why Choose Us?",

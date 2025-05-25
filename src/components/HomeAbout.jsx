@@ -10,7 +10,7 @@ const contentData = [
       "The Aryabhatta Knowledge University Incubation Centre is a dynamic hub designed to nurture groundbreaking ideas, support ambitious entrepreneurs, and foster innovation. We provide startups, visionaries, and early-stage businesses with the resources, mentorship, and infrastructure they need to thrive in today's competitive ecosystem.",
     description2: "",
     image:
-      "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/images/akuIncubation_optimized.png",
   },
   {
     name: "Why Choose Us?",
@@ -47,7 +47,7 @@ const contentData = [
       },
     ],
     image:
-      "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/images/question_symbol.jpg",
   },
   {
     name: "What We Offer",
@@ -84,7 +84,7 @@ const contentData = [
       },
     ],
     image:
-      "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/images/image2.png",
   },
   {
     name: "Establishment of Incubation Centre at the Aryabhatta Knowledge University",
@@ -93,7 +93,7 @@ const contentData = [
     description2:
       "For the establishment of Incubation Centre at Aryabhatta Knowledge University, Patna, Dr. Manisha Prakash, Assistant Professor, School of Journalism and Mass Communication was nominated as Nodal Officer vide memo no. 012/Acad/04-39/AKU/2024-1297 date 13.03.2024.",
     image:
-      "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/images/establish.jpg",
   },
   {
     name: "Objectives of the Incubation Centre",
@@ -108,7 +108,7 @@ const contentData = [
       "Help secure financing from angel investors, government organizations, and other sources.",
     ],
     image:
-      "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/images/image1.jpg",
   },
 ];
 

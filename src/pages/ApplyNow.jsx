@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from 'react-router-dom';
 
 const ApplyNow = () => {
     
@@ -13,6 +14,12 @@ const ApplyNow = () => {
         "Early-stage startups seeking structured support.",
         "Innovators looking for mentorship and funding.",
       ];
+
+      
+  const navigate = useNavigate();
+  const  clickhadler =()=>{
+    navigate("/incubation-apply-form")
+  }
     
       return (
         <section
@@ -42,7 +49,10 @@ const ApplyNow = () => {
           </div>
 
           <div className="mt-10 flex items-center content-center">
-              <button className="px-4 sm:px-6 py-2 sm:py-3 text-white font-semibold rounded-full bg-gradient-to-r from-blue-500 to-teal-400 hover:scale-105 transition-all duration-300 shadow-lg text-sm sm:text-base md:text-lg" >
+              
+              <button 
+              onClick={clickhadler}
+              className="px-4 sm:px-6 py-2 sm:py-3 text-white font-semibold rounded-full bg-gradient-to-r from-blue-500 to-teal-400 hover:scale-105 transition-all duration-300 shadow-lg text-sm sm:text-base md:text-lg" >
                 Apply Now
               </button>
           </div>
