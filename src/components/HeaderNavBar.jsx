@@ -12,14 +12,15 @@ const HeaderNavBar = () => {
     { name: "Home", link: "/" },
     { name: "About Us", 
       dropdown: [
-        {name: "Governing society",link:"/governing-society"},
+        {name:"About BSFT",link:"/startup-bsft"},
+        {name: "MoU With TIE",link:"/mou-with-tie"},
         { name: "Project Evaluation Team", link: "/project-evaluation-team" },
         { name: "IC AKU Team", link: "/ic-aku-team" },
       ], 
   },
     { name: "Incubation Program", 
       dropdown: [
-      {name: "ICAKU Patna Incubation",link:"/icaku-patna-incubation"},
+      {name: "University Outreach ",link:"/university-outreach"},
       { name: "Nidhi Prayas", link: "/nidhi-prayas" },
       { name: "Nidhi-EIR", link: "/nidhi-eir" },
       { name: "SISF", link: "/sisf" },

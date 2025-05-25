@@ -8,20 +8,11 @@ const Latest_post = () => {
       imgSrc: '/images/new-gif-image.gif',
     },
     {
-      text: 'lore lorem jbhdhd hujhf huiehf',
+      text: 'Updates Comming Soon......',
       link: '',
       imgSrc: '/images/new-gif-image.gif',
     },
-    {
-      text: 'hvbdshvh uhf gdh h h nuh unsjfn bjsb ',
-      link: '',
-      imgSrc: '/images/new-gif-image.gif',
-    },
-    {
-      text: 'njdh hfh hf  huiehfu  u h fu',
-      link: '',
-      imgSrc: '/images/new-gif-image.gif',
-    },
+   
   ];
 
   return (
